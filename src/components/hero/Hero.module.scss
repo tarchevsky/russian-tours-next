@@ -1,0 +1,57 @@
+.hero {
+  background-color: #33333349;
+  max-width: 600px;
+  margin: 0 auto;
+  mix-blend-mode: difference;
+  padding: 50px;
+  border: 20px solid #ffffff;
+
+  h1 {
+    position: relative;
+    font-weight: 900;
+    @apply text-5xl;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: block;
+      width: 30%;
+      height: 5px;
+      background-color: #fff;
+    }
+  }
+
+  p {
+    letter-spacing: 4px
+  }
+}
+
+.img {
+  mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+}
+
+.button {
+  position: relative;
+  background-color: transparent;
+  border: 2px solid #fff;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: #333;
+    mix-blend-mode: color;
+    transition: width 0.4s ease-in-out;
+  }
+
+  &:hover:before {
+    width: 100%;
+  }
+}

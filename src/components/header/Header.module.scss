@@ -1,0 +1,53 @@
+.active {
+    opacity: 1;
+    @apply bg-base-100;
+    transform: translateY(0);
+
+    .item {
+        opacity: 1;
+    }
+}
+
+.header li a {
+    padding: 5px 15px;
+}
+
+.header li a:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #000;
+    transition: width 0.4s ease-in-out;
+    mix-blend-mode: difference;
+}
+
+.header li a:hover:before {
+    width: 100%;
+}
+
+.logo {
+    position: relative;
+    padding-left: 20px;
+    color: #fff;
+    font-size: 2rem;
+    letter-spacing: normal;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 5px;
+        height: 100%;
+        background-color: #fff;
+    }
+
+    span {
+        font-size: 2.5rem;
+        font-weight: 900;
+    }
+}
