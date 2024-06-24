@@ -3,8 +3,8 @@ import styles from './Masonry.module.scss'
 
 const Masonry = () => {
 	return (
-		<div className='grid grid-cols-1 xs:grid-cols-2 gap-4 md:grid-cols-3 mb-16'>
-			<div className='grid gap-4'>
+		<div className='grid grid-cols-1 xs:grid-cols-2 gap-6 md:grid-cols-3 mb-16'>
+			<div className='grid gap-6'>
 				<div className={cn(styles.img, 'relative')}>
 					<img
 						className='h-full max-w-full rounded-lg object-cover object-center'
@@ -23,7 +23,7 @@ const Masonry = () => {
 					/>
 				</div>
 			</div>
-			<div className='grid gap-4'>
+			<div className='grid gap-6'>
 				<div>
 					<img
 						className='h-full max-w-full rounded-lg object-cover object-center'
@@ -39,7 +39,7 @@ const Masonry = () => {
 					/>
 				</div>
 			</div>
-			<div className='grid gap-4'>
+			<div className='grid gap-6'>
 				<div>
 					<img
 						className='h-full max-w-full rounded-lg object-cover object-center'
