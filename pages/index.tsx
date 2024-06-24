@@ -7,6 +7,7 @@ import CarouselBeyond from '@/components/carouselBeyond/CarouselBeyond'
 import Carousel from '@/components/carousel/Carousel'
 import { MaterialSlider } from '@/components/materialSlider/MaterialSlider'
 import Quiz from '@/components/quiz/Quiz'
+import Masonry from '@/components/masonry/Masonry'
 
 const HomePage: NextPage = () => {
 	return (
@@ -33,6 +34,9 @@ const HomePage: NextPage = () => {
 			{/*<FadeIn className='cont'>*/}
 			{/*	<Quiz />*/}
 			{/*</FadeIn>*/}
+			<FadeIn className='cont'>
+				<Masonry />
+			</FadeIn>
 		</>
 	)
 }
